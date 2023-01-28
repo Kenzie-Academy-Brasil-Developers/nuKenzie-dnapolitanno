@@ -1,0 +1,32 @@
+.maincontainerdash {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.navdashlist > h4 {
+  margin-top: 24px;
+
+  font-weight: 700;
+  font-size: var(--font-size-4);
+  line-height: 30px;
+}
+
+@media (min-width: 1080px) {
+  .maincontainerdash {
+    flex-wrap: nowrap;
+    gap: 3.625rem;
+  }
+
+  .formcontainer {
+    width: 363px;
+    height: 351px;
+  }
+
+  .navdashlist {
+    width: 562px;
+    height: 454px;
+  }
+}

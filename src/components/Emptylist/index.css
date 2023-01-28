@@ -1,0 +1,27 @@
+.empty-box h3 {
+  width: 336px;
+  height: 68px;
+  margin-top: 27px;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.empty-box img {
+  width: 363px;
+  height: 305px;
+}
+
+@media (min-width: 990px) {
+  .empty-box h3 {
+    width: 440px;
+    height: 34px;
+    margin-bottom: 27px;
+  }
+
+  .empty-box img {
+    width: 562px;
+    height: 331px;
+  }
+}
