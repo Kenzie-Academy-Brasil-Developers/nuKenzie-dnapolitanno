@@ -41,7 +41,6 @@ const Form = ({ listTransactions, setListTransactions }) => {
     setCash("");
     setInputinformation("Entrada");
   }
-  console.log(listTransactions);
 
   return (
     <>

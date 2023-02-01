@@ -4,9 +4,7 @@ import "./index.css";
 
 const Card = ({ setListTransactions, listTransactions }) => {
   const removeCard = (e) => {
-    console.log(e.target.id);
     const cardid = listTransactions.filter((card) => card.id !== e.target.id);
-    console.log(cardid);
 
     setListTransactions(cardid);
   };
