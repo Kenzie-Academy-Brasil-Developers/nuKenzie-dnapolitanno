@@ -4,6 +4,12 @@
   align-items: center;
   justify-items: center;
   justify-content: center;
+
+  background-color: var(--color-grey-0);
+}
+
+.navdashlist {
+  min-width: 300px;
 }
 
 .navdashlist > h4 {

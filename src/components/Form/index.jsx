@@ -10,8 +10,13 @@ const Form = ({ listTransactions, setListTransactions }) => {
   function handleSubmit(event) {
     event.preventDefault();
 
-    const cashnumber = parseFloat(cash);
-    console.log(cashnumber);
+    let cashnumber = 0;
+
+    {
+      inputinformation === "Despesa"
+        ? (cashnumber = parseFloat(-cash))
+        : (cashnumber = parseFloat(cash));
+    }
 
     const newList = {
       id: uuid(),
@@ -69,7 +74,7 @@ const Form = ({ listTransactions, setListTransactions }) => {
                 onChange={(event) => setInputinformation(event.target.value)}
               >
                 <option value="Entrada">Entrada</option>
-                <option value="Saida">Saída</option>
+                <option value="Despesa">Despesa</option>
               </select>
             </label>
           </section>

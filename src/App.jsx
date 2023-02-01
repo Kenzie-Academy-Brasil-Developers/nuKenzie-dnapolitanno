@@ -12,17 +12,18 @@ function App() {
   );
 
   return (
-    <>
+    <section>
       {isLoggedIn ? (
         <Home setIsLoggedIn={setIsLoggedIn} />
       ) : (
         <Dashbord
+          className="backgroundash"
           setIsLoggedIn={setIsLoggedIn}
           listTransactions={listTransactions}
           setListTransactions={setListTransactions}
         />
       )}
-    </>
+    </section>
   );
 }
 

@@ -4,10 +4,11 @@ import "./index.css";
 
 const Card = ({ setListTransactions, listTransactions }) => {
   const removeCard = (e) => {
-    const cardid = listTransactions.filter((card) => card.id === e.id);
-    const newData = [...listTransactions];
-    newData.splice(cardid, 1);
-    setListTransactions(newData);
+    console.log(e.target.id);
+    const cardid = listTransactions.filter((card) => card.id !== e.target.id);
+    console.log(cardid);
+
+    setListTransactions(cardid);
   };
 
   return (
@@ -21,10 +22,14 @@ const Card = ({ setListTransactions, listTransactions }) => {
                   inputinformation === "Entrada" ? "cardentry" : "card"
                 }
               >
-                <h4 className="infotitle">{description}</h4>
-                <span className="infotypeinformation">{inputinformation}</span>
+                <section className="containerdescriptioncard">
+                  <h4 className="infotitle">{description}</h4>
+                  <span className="infotypeinformation">
+                    {inputinformation}
+                  </span>
+                </section>
                 <span className="infomoney">
-                  {cashnumber.toLocaleString("pt-br", {
+                  {Math.abs(cashnumber).toLocaleString("pt-br", {
                     style: "currency",
                     currency: "BRL",
                   })}

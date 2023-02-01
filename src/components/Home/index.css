@@ -1,6 +1,7 @@
-.pagehome {
-  background-color: var(--color-grey-5);
+.backgroundhome {
   height: 100vh;
+
+  background-color: var(--color-grey-5);
 }
 
 .maincontainer {
@@ -20,14 +21,15 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 28px;
-
-  min-width: 22.5rem;
 }
 
 .infos > h2 {
+  width: 100%;
+
   font-weight: 800;
   font-size: 2.375rem;
   line-height: 3rem;
+
   color: var(--color-grey-0);
 }
 
@@ -35,6 +37,7 @@
   font-weight: 400;
   font-size: var(--font-size-4);
   line-height: 1.625rem;
+
   color: var(--color-grey-0);
 }
 
@@ -43,7 +46,7 @@
   align-items: center;
   justify-content: center;
 
-  width: 360px;
+  width: 100%;
   height: 48px;
   padding: 0.8125rem 1.25rem;
 
@@ -68,6 +71,13 @@
 
 .imghomemobile {
   display: block;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.imghomemobile > img {
+  width: 100%;
 }
 
 .imghomedesk {

@@ -1,2 +1,11 @@
+.backgroundhome {
+  height: 100vh;
 
+  background-color: var(--color-grey-5);
+}
 
+.backgroundash {
+  height: 100vh;
+
+  background-color: var(--color-grey-0);
+}

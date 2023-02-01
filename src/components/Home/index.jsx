@@ -7,7 +7,7 @@ import "./index.css";
 const Home = ({ setIsLoggedIn }) => {
   return (
     <>
-      <section className="pagehome">
+      <section className="backgroundhome">
         <main className="maincontainer container">
           <section className="infos">
             {<Logoimgdark />}

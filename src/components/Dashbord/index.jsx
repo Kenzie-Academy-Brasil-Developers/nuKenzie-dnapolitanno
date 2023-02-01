@@ -24,7 +24,7 @@ const Dashbord = ({ setIsLoggedIn, listTransactions, setListTransactions }) => {
             false
           )}
         </section>
-        <section className="navdashlist">
+        <section className="navdashlist container">
           <h4>Resumo financeiro</h4>
           {!listTransactions.length ? (
             <Emptylist />
